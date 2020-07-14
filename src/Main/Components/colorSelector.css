@@ -1,0 +1,25 @@
+.color-selector-div {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, .7);
+  }
+  
+  .theme1 {
+    background: #E27D60;
+  }
+  
+  .theme2 {
+    background: #242582;
+  }
+  
+  .theme3 {
+    background: #5D5C61;
+  }
+  .theme4 {
+    background: #5680E9;
+  }
+  .theme5 {
+    background: #00887A;
+  }
