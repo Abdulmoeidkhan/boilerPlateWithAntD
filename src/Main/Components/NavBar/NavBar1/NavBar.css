@@ -1,0 +1,51 @@
+.logo {
+    width: 90px;
+    /* background: rgba(255, 255, 255, 0.2); */
+    /* margin: 1.6px 2.8px 1.6px 0; */
+    float: left;
+  }
+  .ant-layout-header {
+      padding: 0 !important;    
+  }
+  .ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-submenu:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu-active, .ant-menu-horizontal > .ant-menu-item-open, .ant-menu-horizontal > .ant-menu-submenu-open, .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected{
+      border-bottom-color: inherit !important;  
+      border-bottom-width: 2px  !important;
+      border-bottom-style: solid;
+      transition: all 1s;
+  }
+  .ant-menu-submenu-popup > .ant-menu ,.ant-menu-submenu{
+  background-color: inherit !important ;
+}
+.ant-menu-vertical .ant-menu-item{
+  margin: 0px !important;
+}
+
+  .ant-menu-item-only-child{
+    border-bottom-width: 2px  !important;
+    border-bottom-style: solid;
+
+  }
+  .nav-left-class{
+    float: left;
+    display: inline-block;
+    width: 60%;
+  }
+  .nav-right-class{
+      float: right;
+      display: inline-block;
+      width:40%;
+  }
+  .ant-menu-item a::before{
+    bottom: -2px !important;
+  }
+
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+    .nav-right-class{
+      width:75%
+    }
+    .nav-left-class{
+      width:25% !important;
+  }
+}

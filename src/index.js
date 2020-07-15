@@ -8,15 +8,15 @@ const rootElement = document.getElementById("root");
 
 if (rootElement.hasChildNodes()) {
   ReactDOM.hydrate(
-    <React.StrictMode>
+    // <React.StrictMode>
   <App />
-  </React.StrictMode>
+  // </React.StrictMode>
   , rootElement);
 } else {
   ReactDOM.render(
-    <React.StrictMode>
+    // <React.StrictMode>
   <App />
-  </React.StrictMode>
+  // </React.StrictMode>
   , rootElement);
 }
 serviceWorker.register();

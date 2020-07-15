@@ -23,3 +23,18 @@
   .theme5 {
     background: #00887A;
   }
+  .button-parent-drawer{
+    cursor:pointer;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .drawer-show-class{
+    width:40px;
+    overflow:auto;
+    transition: all 1s;
+  }
+  .drawer-hidden-class{
+    width:0px;
+    overflow: hidden;
+    transition: all 1s;
+  }

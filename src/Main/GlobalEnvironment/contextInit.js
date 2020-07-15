@@ -13,7 +13,13 @@ export const ThemeContextChanger = createContext(null);
 let themeChanger = (draft, action) => {
     switch (action.type) {
         case "theme1":
-            draft.colors =initialState.colors
+            draft.colors ={
+                color1: "#E27D60",
+                color2: "#85DCB",
+                color3: "#E8A87C",
+                color4: "#C38D9E",
+                color5: "#41B3A3",
+            }
             sessionStorage.setItem("colors",JSON.stringify(draft))
             return;
         case "theme2":
