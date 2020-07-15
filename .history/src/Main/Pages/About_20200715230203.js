@@ -5,16 +5,16 @@ import NavBar from "../Components/NavBar/NavBar1/NavBar";
 import MyFooter from "../Components/Footer/Footer1/Footer.js";
 import ColorSelector  from "../Components/ColorSelector/colorSelector";
 
-const Services = (props) => {
+const AboutUs = (props) => {
     return (
         <ThemeContext.Consumer>
             {colorsState =>
                 <Layout>
-                    <NavBar keyVal="3"/>
+                    <NavBar keyVal="2"/>
                     <h1>
                         <span
-                            // style={{ backgroundColor: colorsState.colors.color1, color: colorsState.colors.color2 }}
-                        >Services</span>
+                            // style={{ backgroundColor: colorsState.colors.color1, color: colorsState.colors.color3 }}
+                        >About Us</span>
                     </h1>
                     <ColorSelector/>
                     <MyFooter/>
@@ -24,4 +24,4 @@ const Services = (props) => {
     )
 }
 
-export default Services
+export default AboutUs

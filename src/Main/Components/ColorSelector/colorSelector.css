@@ -7,21 +7,29 @@
   }
   
   .theme1 {
-    background: #E27D60;
+    background: #d48806;
   }
   
   .theme2 {
-    background: #242582;
+    background: #3f6600;
   }
-  
   .theme3 {
-    background: #5D5C61;
+    background: #003a8c;
   }
   .theme4 {
-    background: #5680E9;
+    background: #22075e;
   }
   .theme5 {
-    background: #00887A;
+    background: #ffc53d;
+  }
+  .theme6 {
+    background: #bae637;
+  }
+  .theme7 {
+    background: #69c0ff;
+  }
+  .theme8 {
+    background: #531dab;
   }
   .button-parent-drawer{
     cursor:pointer;
@@ -39,4 +47,8 @@
     width:0px;
     overflow: hidden;
     transition: all 1s;
+  }
+  .my-color-drawer{
+    position: absolute;
+    top:80px
   }

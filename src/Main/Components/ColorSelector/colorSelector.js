@@ -26,6 +26,9 @@ const ColorSelector = () => {
                                 <div className="color-selector-div theme3" onClick={() => colorChanger.dispatch({ type: "theme3" })}></div>
                                 <div className="color-selector-div theme4" onClick={() => colorChanger.dispatch({ type: "theme4" })}></div>
                                 <div className="color-selector-div theme5" onClick={() => colorChanger.dispatch({ type: "theme5" })}></div>
+                                <div className="color-selector-div theme6" onClick={() => colorChanger.dispatch({ type: "theme6" })}></div>
+                                <div className="color-selector-div theme7" onClick={() => colorChanger.dispatch({ type: "theme7" })}></div>
+                                <div className="color-selector-div theme8" onClick={() => colorChanger.dispatch({ type: "theme8" })}></div>
                             </div>
                         </div>
                 }

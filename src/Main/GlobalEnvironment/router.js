@@ -8,25 +8,24 @@ import ContactUs from "../Pages/Contact"
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
+    Route
 } from "react-router-dom";
 
 
 
 
-
-function Routes() {
+function Routes(props) {
     return (
         <Router>
             <Switch>
                 <Route
                     path={`/`}
-                    component={Home}
+                    component={props=><Home {...props}/>}
                     exact />
-                <Route path={`/about`} component={AboutUs} />
-                <Route path={`/services`} component={Services} />
-                <Route path={`/blogs`} component={Blogs} />
-                <Route path={`/contact`} component={ContactUs} />
+                <Route path={`/about`} component={props=><AboutUs {...props}/>} />
+                <Route path={`/services`} component={props=><Services {...props}/>} />
+                <Route path={`/blogs`} component={props=><Blogs {...props}/>} />
+                <Route path={`/contact`} component={props=><ContactUs {...props}/>} />
             </Switch>
         </Router>
     );
