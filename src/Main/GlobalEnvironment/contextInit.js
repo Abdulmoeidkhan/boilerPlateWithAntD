@@ -104,7 +104,7 @@ let initialState = JSON.parse(sessionStorage.getItem("colors")) || {
         color1: "#d48806",
         color2: "#874d00",
         // color3: "#E8A87C",
-        color3:"#000",
+        color3:"#fff",
         type:"light"
         // color4: "#C38D9E",
         // color5: "#41B3A3",

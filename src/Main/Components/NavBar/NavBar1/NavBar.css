@@ -20,11 +20,10 @@
   margin: 0px !important;
 }
 
-  .ant-menu-item-only-child{
+  /* .ant-menu-item-only-child{
     border-bottom-width: 2px !important;
     border-bottom-style: solid;
-
-  }
+  } */
   .nav-left-class{
     float: left;
     display: inline-block;
@@ -58,7 +57,12 @@
 }
 .ant-menu-horizontal > .ant-menu-item,.ant-menu-horizontal > .ant-menu-submenu{
   top:0px !important;
+  margin-top: 0px !important;
 }
 .ant-layout-header .ant-menu{
   margin-top:-1px
+}
+
+.ant-menu-vertical .ant-menu-item-only-child a:hover{
+  text-decoration: none !important;
 }

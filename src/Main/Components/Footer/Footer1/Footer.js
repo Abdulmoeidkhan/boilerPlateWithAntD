@@ -60,7 +60,7 @@ function MyFooter(props) {
                     </li>
                     <li>
                       <div title="Flight 380 14 Church St, Wolverton, Milton Keynes MK12 5JN, UK">
-                        <p className="anchorChildEff" title="Flight 380 14 Church St, Wolverton, Milton Keynes MK12 5JN, UK">
+                        <div className="anchorChildEff" title="Flight 380 14 Church St, Wolverton, Milton Keynes MK12 5JN, UK">
                           <a href="https://www.google.com/maps/place/MK+GLOBAL+TRAVEL+%26+MONEY+TRANSFER/@52.0625271,-0.8109615,17z/data=!3m1!4b1!4m5!3m4!1s0x487700f8186310d3:0x4056625e2badb3d4!8m2!3d52.0625271!4d-0.8087728" target="_blank" title="Flight 380 14 Church St, Wolverton, Milton Keynes MK12 5JN, UK" style={{ color: colorsState.colors.color3 }}>
                             {/* <img
                               src="https://res.cloudinary.com/owaisraza/image/upload/v1567183423/Flight%20380/home_kkn1na.svg"
@@ -71,7 +71,7 @@ function MyFooter(props) {
                             {colorsState.type==="light"?<HomeOutlined/>:<HomeFilled/>}
                             <div className="h4Class"> Flight 380 14 Church St, Wolverton, Milton Keynes MK12 5JN, UK</div>
                           </a>
-                        </p>
+                        </div>
                       </div>
                     </li>
                   </ul>
