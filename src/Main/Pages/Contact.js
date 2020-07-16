@@ -1,24 +1,23 @@
 import React from 'react';
 import { ThemeContext } from "../GlobalEnvironment/contextInit"
 import { Layout } from 'antd';
-import NavBar from "../Components/NavBar/NavBar1/NavBar"
 import MyFooter from "../Components/Footer/Footer1/Footer.js"
 import ColorSelector  from "../Components/ColorSelector/colorSelector";
+import MySider from "../Components/Sider/Sider4/Sider.js"
+
+const { Content, } = Layout;
 
 const ContactUs = (props) => {
     return (
         <ThemeContext.Consumer>
             {colorsState =>
-                <Layout>
-                    <NavBar keyVal="5"/>
-                    <h1>
-                        <span
-                            // style={{ backgroundColor: colorsState.colors.color1, color: colorsState.colors.color2 }}
-                        >Contact Us</span>
-                    </h1>
-                    <ColorSelector/>
-                    <MyFooter/>
-                </Layout>
+                <MySider>
+                    <Content>
+                        <h2>Contact Us</h2>
+                        <ColorSelector />
+                    </Content>
+                    <MyFooter />
+                </MySider>
             }
         </ThemeContext.Consumer>
     )

@@ -1,0 +1,15 @@
+#components-layout-demo-side .logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+  }
+  
+  .site-layout .site-layout-background {
+    background: #fff;
+  }
+  /* .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::after,.ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::before{
+      background: #fff !important;
+  } */
+.ant-menu-submenu-title:hover{
+    color:inherit !important
+}

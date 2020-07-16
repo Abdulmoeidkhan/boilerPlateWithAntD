@@ -7,15 +7,17 @@ import {
     FileOutlined,
     TeamOutlined,
     UserOutlined,
+    MenuUnfoldOutlined,
+    MenuFoldOutlined
 } from '@ant-design/icons';
-// import {
-//     Link,
-//     useHistory
-// } from "react-router-dom";
+import {
+    Link,
+    useHistory
+} from "react-router-dom";
 import "./Sider.css"
 
 
-const { Sider } = Layout;
+const { Sider, Header } = Layout;
 const { SubMenu } = Menu;
 
 const MyTriger = (props) => (
@@ -24,17 +26,18 @@ const MyTriger = (props) => (
             !props.collapsed
                 ?
                 <div className="ant-layout-sider-trigger" style={{ backgroundColor: colorsState.colors.color2, color: colorsState.colors.color2, width: "200px" }}>
-                    <span role="img" aria-label="left" className="anticon anticon-left" style={{ backgroundColor: colorsState.colors.color2, color: colorsState.colors.color3 }}>
-                        <svg viewBox="64 64 896 896" focusable="false" data-icon="left" width="1em" height="1em" fill="currentColor" aria-hidden="true">
-                            <path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z">
-                            </path>
-                        </svg>
-                    </span>
-                </div> :
-                <div className="ant-layout-sider-trigger" style={{ backgroundColor: colorsState.colors.color2, color: colorsState.colors.color2, width: "80px" }}>
                     <span role="img" aria-label="right" className="anticon anticon-right" style={{ backgroundColor: colorsState.colors.color2, color: colorsState.colors.color3 }}>
                         <svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
                             <path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+                :
+                <div className="ant-layout-sider-trigger" style={{ backgroundColor: colorsState.colors.color2, color: colorsState.colors.color2, width: "80px" }}>
+                    <span role="img" aria-label="left" className="anticon anticon-left" style={{ backgroundColor: colorsState.colors.color2, color: colorsState.colors.color3 }}>
+                        <svg viewBox="64 64 896 896" focusable="false" data-icon="left" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                            <path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z">
                             </path>
                         </svg>
                     </span>
@@ -44,19 +47,19 @@ const MyTriger = (props) => (
 )
 
 function MySider(props) {
-    // let history=useHistory() 
     let [collapsed, setCollapsed] = useState(true)
+    let history = useHistory()
     return (
         <ThemeContext.Consumer>
             {colorsState =>
                 <Layout style={{ minHeight: '100vh' }} >
                     <Sider collapsible collapsed={collapsed}
-                        trigger={<MyTriger collapsed={collapsed} />}
+                        trigger={null}
                         onCollapse={() => setCollapsed(!collapsed)} style={{ backgroundColor: colorsState.colors.color1, color: colorsState.colors.color3 }}>
-                        <div className="logo"/>
+                        <div className="logo" />
                         {
                             <style jsx="true">
-                            {`
+                                {`
                             .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::after,.ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::before{
                                 background: ${colorsState.colors.color3} !important;
                             }
@@ -64,31 +67,8 @@ function MySider(props) {
                                 background-color:${colorsState.colors.color1} !important
                             }
                             `}
-                        </style>
-                            // colorsState.colors.type === "light" ? <style jsx="true">
-                            //     {`
-                            //     .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::after,.ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::before{
-                            //         background: #000 !important;
-                            //     }
-                            //     .ant-menu-submenu > .ant-menu {
-                            //         background-color:${colorsState.colors.color1} !important
-                            //     }
-                            //     `}
-                            // </style>
-                            //     :
-                            //     <style jsx="true">
-                            //         {`
-                            //         .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::after,.ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::before{
-                            //             background: ${colorsState.colors.color3} !important;
-                            //         }
-                            //         .ant-menu-submenu > .ant-menu {
-                            //             background-color:${colorsState.colors.color1} !important
-                            //         }
-                            //         `}
-                            //     </style>
+                            </style>
                         }
-
-
                         <Menu style={{ backgroundColor: colorsState.colors.color1, color: colorsState.colors.color3 }} defaultSelectedKeys={['1']} mode="inline">
                             <Menu.Item style={{ backgroundColor: colorsState.colors.color1, color: colorsState.colors.color3 }} key="1" icon={<PieChartOutlined />}>
                                 Option 1
@@ -108,7 +88,34 @@ function MySider(props) {
                             <Menu.Item style={{ backgroundColor: colorsState.colors.color1, color: colorsState.colors.color3 }} key="9" icon={<FileOutlined />} />
                         </Menu>
                     </Sider>
-                    {props.children}
+                    <Layout className="site-layout with-left-icons">
+                        <Header className="header" style={{ backgroundColor: colorsState.colors.color1, color: colorsState.colors.color3 }}>
+                        <div className="nav-left2-class">
+                                {/* <style jsx="true">
+                                    {`
+                                        .nav-left2-class{
+                                            border-bottom-color: ${colorsState.colors.color1};
+                                        }
+                                    `}
+                                </style> */}
+                            {collapsed ?  <MenuFoldOutlined className="trigger" onClick={()=>setCollapsed(!collapsed)} />:<MenuUnfoldOutlined className="trigger" onClick={()=>setCollapsed(!collapsed)} />}
+                            </div>
+                            <div className="nav-left-class" >
+                                <img className="logo" alt="LOGO's" src={require("../../../../logo.svg")} width="50px" onClick={() => history.push("/")} />
+                            </div>
+                            <div className="nav-right-class">
+                                <Menu style={{ backgroundColor: colorsState.colors.color1, color: colorsState.colors.color3 }} mode="horizontal" defaultSelectedKeys={["5"]}>
+                                    <Menu.Item style={{ backgroundColor: colorsState.colors.color1, color: colorsState.colors.color3 }} key="1"><Link style={{ color: colorsState.colors.color3 }} to="/">Home</Link></Menu.Item>
+                                    <Menu.Item style={{ backgroundColor: colorsState.colors.color1, color: colorsState.colors.color3 }} key="2"><Link style={{ color: colorsState.colors.color3 }} to="/about">About</Link></Menu.Item>
+                                    <Menu.Item style={{ backgroundColor: colorsState.colors.color1, color: colorsState.colors.color3 }} key="3"><Link style={{ color: colorsState.colors.color3 }} to="/services">Our Services</Link></Menu.Item>
+                                    <Menu.Item style={{ backgroundColor: colorsState.colors.color1, color: colorsState.colors.color3 }} key="4"><Link style={{ color: colorsState.colors.color3 }} to="/blogs">Our Blog</Link></Menu.Item>
+                                    <Menu.Item style={{ backgroundColor: colorsState.colors.color1, color: colorsState.colors.color3 }} key="5"><Link style={{ color: colorsState.colors.color3 }} to="/contact">Contact Us</Link></Menu.Item>
+                                    
+                                </Menu>
+                            </div>
+                        </Header>
+                            {props.children}
+                    </Layout>
                 </Layout>
             }
         </ThemeContext.Consumer>

@@ -1,0 +1,99 @@
+#components-layout-demo-side .logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+  }
+  
+  .site-layout .site-layout-background {
+    background: #fff;
+  }
+  /* .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::after,.ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::before{
+      background: #fff !important;
+  } */
+.ant-menu-submenu-title:hover{
+    color:inherit !important
+}
+
+/* NAVBAR CSS */
+
+
+.logo {
+  width: 90px;
+  /* background: rgba(255, 255, 255, 0.2); */
+  /* margin: 1.6px 2.8px 1.6px 0; */
+  float: left;
+}
+.ant-layout-header {
+    padding: 0 !important;    
+}
+.ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-submenu:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu-active, .ant-menu-horizontal > .ant-menu-item-open, .ant-menu-horizontal > .ant-menu-submenu-open, .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected{
+    border-bottom-color: inherit !important;  
+    border-bottom-width: 2px !important;
+    border-bottom-style: solid;
+    transition: all .5s;
+}
+.ant-menu-submenu-popup > .ant-menu ,.ant-menu-submenu{
+background-color: inherit !important ;
+}
+.ant-menu-vertical .ant-menu-item{
+margin: 0px !important;
+}
+
+/* .ant-menu-item-only-child{
+  border-bottom-width: 2px !important;
+  border-bottom-style: solid;
+} */
+.with-right-icons .nav-left-class{
+  float: left;
+  display: inline-block;
+  width: 55%;
+}
+.with-right-icons .nav-right2-class{
+  float: right;
+  display: inline-block;
+  width:5%;
+  border-bottom: 1px solid ;
+}
+.with-right-icons .nav-right2-class .trigger svg{
+  margin-top:-16px;
+  margin-left: 5px;
+  margin-bottom:4px;
+  font-size: 30px;
+}
+.with-right-icons .nav-right-class{
+    float: right;
+    display: inline-block;
+    width:40%;
+}
+.ant-menu-item a::before{
+  bottom: -2px !important;
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px) {
+  .nav-right-class{
+    width:75%
+  }
+  .nav-left-class{
+    width:25% !important;
+}
+}
+.header{
+font-weight: 700;
+font-size: 48px;
+}
+.ant-menu-horizontal > .ant-menu-item a:hover{
+text-decoration: none;
+}
+.ant-menu-horizontal > .ant-menu-item,.ant-menu-horizontal > .ant-menu-submenu{
+top:0px !important;
+margin-top: 0px !important;
+}
+.ant-layout-header .ant-menu{
+margin-top:-1px
+}
+
+.ant-menu-vertical .ant-menu-item-only-child a:hover{
+text-decoration: none !important;
+}

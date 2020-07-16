@@ -17,6 +17,7 @@ const Home = (props) => {
                     <Layout className="site-layout">
                         <NavBar keyVal="1" />
                         <Content>
+                            <h2>Home</h2>
                             <ColorSelector />
                         </Content>
                         <MyFooter />
