@@ -60,8 +60,14 @@ function MySider(props) {
                             .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::after,.ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::before{
                                 background: ${colorsState.colors.color3} !important;
                             }
-                            .ant-menu-submenu > .ant-menu {
+                            .ant-menu-submenu > .ant-menu{
                                 background-color:${colorsState.colors.color1} !important
+                            }
+                            .ant-menu-inline,.ant-menu-vertical{
+                                border-right: 2px solid ${colorsState.colors.color1} !important
+                            }
+                            .ant-menu-inline .ant-menu-item::after{
+                                border-right: 2px solid ${colorsState.colors.color2} !important
                             }
                             `}
                         </style>

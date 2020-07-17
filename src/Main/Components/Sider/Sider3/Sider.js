@@ -64,6 +64,12 @@ function MySider(props) {
                                         .nav-right2-class{
                                             border-bottom-color: ${colorsState.colors.color1};
                                         }
+                                        .ant-menu-inline,.ant-menu-vertical{
+                                            border-right: 2px solid ${colorsState.colors.color1} !important
+                                        }
+                                        .ant-menu-inline .ant-menu-item::after{
+                                            border-right: 2px solid ${colorsState.colors.color2} !important
+                                        }
                                     `}
                                 </style>
                             {collapsed ? <MenuUnfoldOutlined className="trigger" onClick={()=>setCollapsed(!collapsed)} /> : <MenuFoldOutlined className="trigger" onClick={()=>setCollapsed(!collapsed)} />}

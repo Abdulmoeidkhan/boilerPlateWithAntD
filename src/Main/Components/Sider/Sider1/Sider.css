@@ -13,3 +13,6 @@
 .ant-menu-submenu-title:hover{
     color:inherit !important
 }
+.ant-menu-submenu-inline{
+  margin-right:-2px !important;
+}

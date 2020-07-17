@@ -2,6 +2,7 @@ import React from 'react';
 import MainComponent from "./Main/GlobalEnvironment/mainWrapper"
 import 'antd/dist/antd.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css"
 
 function App() {
   return (
