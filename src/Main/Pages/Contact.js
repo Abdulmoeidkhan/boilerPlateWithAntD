@@ -4,7 +4,7 @@ import { Layout } from 'antd';
 import MyFooter from "../Components/Footer/Footer1/Footer.js"
 import ColorSelector  from "../Components/ColorSelector/colorSelector";
 import MySider from "../Components/Sider/Sider4/Sider.js"
-
+import Slider from "../Components/Slider/Slider4/Slider.js";
 const { Content, } = Layout;
 
 const ContactUs = (props) => {
@@ -15,6 +15,7 @@ const ContactUs = (props) => {
                     <Content>
                         <h2>Contact Us</h2>
                         <ColorSelector />
+                        <Slider/>   
                     </Content>
                     <MyFooter />
                 </MySider>

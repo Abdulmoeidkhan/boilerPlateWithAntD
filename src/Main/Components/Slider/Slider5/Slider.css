@@ -1,0 +1,70 @@
+.alice-carousel{
+    width: 99%;
+    margin:0 auto;
+}
+
+.alice-carousel {
+    width: 90%;
+    display: inline-block;
+    margin: 0 auto
+}
+
+.cardIcon {
+    display: inline-block;
+    position: relative;
+    top: -240px;
+    padding: 0 .5%;
+}   
+
+.item{
+    height: 250px;
+}
+
+.alice-carousel__next-btn{
+    text-align: left;
+}
+@media screen and (min-width: 480px){
+    .alice-carousel {
+        width: 95%;
+        display: inline-block;
+        margin: 0 auto
+    }
+    .cardIcon {
+        top: -220px;
+    }
+    .item{
+        width:80% !important;
+    }
+}
+@media screen and (min-width: 330px)and (max-width: 479px){
+    .alice-carousel {
+        /* width: 80%; */
+        display: inline-block;
+        margin: 0 auto
+    }   
+    .alice-carousel__stage-item{
+        min-width: 260px;
+    }
+    .cardIcon {
+        top: -220px;
+    }
+    .item{
+        width:100% !important;
+    }
+}
+@media screen and (min-width: 230px)and (max-width: 329px){
+    .alice-carousel {
+        width: 75%;
+        display: inline-block;
+        margin: 0 auto
+    }   
+    .cardIcon {
+        top: -175px;
+    }
+    .item{
+        width:90% !important;
+    }
+}
+.cardIcon{
+    z-index: 2;
+}

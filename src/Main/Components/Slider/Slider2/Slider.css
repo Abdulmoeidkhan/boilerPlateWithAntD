@@ -1,0 +1,12 @@
+.slide-container div{
+    height:120vh;
+    width:99%;
+    margin: 0 auto;
+}
+.react-slideshow-fade-wrapper,.react-slideshow-container{
+    height: 100vh !important;
+}
+
+.each-fade img{
+    width:1000px !important;
+}

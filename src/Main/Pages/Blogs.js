@@ -5,6 +5,7 @@ import { Layout } from 'antd';
 import MyFooter from "../Components/Footer/Footer1/Footer.js";
 import ColorSelector from "../Components/ColorSelector/colorSelector";
 import MySider from "../Components/Sider/Sider3/Sider.js"
+import Slider from "../Components/Slider/Slider3/Slider.js";
 
 const { Content, } = Layout;
 
@@ -16,6 +17,7 @@ const Blogs = (props) => {
                     <Content>
                         <h2>Blog</h2>
                         <ColorSelector />
+                        <Slider/>
                     </Content>
                     <MyFooter />
                 </MySider>
