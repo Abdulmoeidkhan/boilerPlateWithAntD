@@ -1,3 +1,6 @@
 .image-slider{
     margin:0 auto !important;
 }
+.image-slider>div{
+    width: 75% !important;
+}

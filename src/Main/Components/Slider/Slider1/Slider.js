@@ -4,13 +4,13 @@ import "./Slider.css"
 
 let Slider = ()=>{
     const images = [
-        { url: "https://dummyimage.com/600x600/000/fff" },
-        { url: "https://dummyimage.com/600x600/000/fff" },
-        { url: "https://dummyimage.com/600x600/000/fff" },
-        { url: "https://dummyimage.com/600x600/000/fff" },
-        { url: "https://dummyimage.com/600x600/000/fff" },
-        { url: "https://dummyimage.com/600x600/000/fff" },
-        { url: "https://dummyimage.com/600x600/000/fff" },
+        { url: "https://dummyimage.com/600x300/000/fff" },
+        { url: "https://dummyimage.com/600x300/000/fff" },
+        { url: "https://dummyimage.com/600x300/000/fff" },
+        { url: "https://dummyimage.com/600x300/000/fff" },
+        { url: "https://dummyimage.com/600x300/000/fff" },
+        { url: "https://dummyimage.com/600x300/000/fff" },
+        { url: "https://dummyimage.com/600x300/000/fff" },
     ];
     return(
         <div>

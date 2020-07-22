@@ -6,6 +6,7 @@ import NavBar from "../Components/NavBar/NavBar2/NavBar"
 import MyFooter from "../Components/Footer/Footer1/Footer.js"
 import MySider from "../Components/Sider/Sider1/Sider.js"
 import Slider from "../Components/Slider/Slider5/Slider.js";
+import MyCard from "../Components/Cards/Card1/Card"
 
 const { Content, } = Layout;
 
@@ -20,6 +21,8 @@ const Home = (props) => {
                         <Content>
                             <h2>Home</h2>
                             <Slider/>
+                            <br/>
+                            <MyCard/>
                             <br/>
                             <ColorSelector />
                         </Content>
