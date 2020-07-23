@@ -13,7 +13,7 @@ import "./NavBar.css"
 
 const { Header } = Layout;
 
-function NavBar(props) {
+function NavBar2(props) {
     const [visible, setVisible] = useState(false);
     let history = useHistory()
     return (
@@ -75,5 +75,5 @@ function NavBar(props) {
     )
 }
 
-export default NavBar
+export default NavBar2
 

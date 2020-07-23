@@ -1,11 +1,8 @@
 import React from "react"
 import Carousel from "react-multi-carousel";
-import { Card } from 'antd';
-
 import "react-multi-carousel/lib/styles.css";
 import "./Card.css"
 
-const { Meta } = Card;
 
 let arr = [0, 1, 2, 3, 4, 5]
 
@@ -62,15 +59,17 @@ let MyCard = (props) => {
                 itemClass="carousel-item-padding-10-px"
             >
                 {arr.map((i) => (
-                <Card
-                key={i}
-                    hoverable
-                    style={{ width: 290, margin: "0 auto" }}
-                    cover={<img alt="example" src="https://picsum.photos/200/300" />}
-                >
-                    <Meta title="Europe Street beat" description="www.instagram.com" />
-                </Card>
+                    <div key={i} className="card5" style={{backgroundImage:`url(https://picsum.photos/300/300)`}}>
+                        <img src="https://picsum.photos/300/300" className="img5" alt="Avatar" style={{ width: "80%",margin:"15px auto" }} />
+                        <div className="container5">
+                            <h4 
+                            className="card-heading"
+                            ><b>Jane Doe</b></h4>
+                            <p>Interior Designer</p>
+                        </div>
+                    </div>
                 ))}
+
             </Carousel>
         </section>
     )

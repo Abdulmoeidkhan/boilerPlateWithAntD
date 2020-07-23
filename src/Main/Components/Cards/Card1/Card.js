@@ -3,19 +3,22 @@ import Coverflow from 'react-coverflow';
 import "./Card.css"
 
 
+let arr = [0, 1, 2, 3, 4, 5]
+
 let MyCard = () => {
     const fn = function () {
         console.log("a")
     }
     return (
-        <Coverflow width="960" height="500"
+        <Coverflow width="960" height="300"
             displayQuantityOfSide={2}
             navigation={true}
             enableScroll={false}
             clickable={true}
             active={2}
         >
-            <div
+            {arr.map((i) => (<div
+                key={i}
                 onClick={() => fn()}
                 onKeyDown={() => fn()}
                 role="menuitem"
@@ -29,28 +32,7 @@ let MyCard = () => {
                         width: '100%',
                     }}
                 />
-            </div>
-            <img src='https://dummyimage.com/600x400/000/fff' alt='title or description' 
-            // data-action="http://andyyou.github.io/react-coverflow/"
-             />
-            <img src='https://dummyimage.com/600x400/000/fff' alt='title or description' 
-            // data-action="http://andyyou.github.io/react-coverflow/"
-             />
-             <img src='https://dummyimage.com/600x400/000/fff' alt='title or description' 
-            // data-action="http://andyyou.github.io/react-coverflow/"
-             />
-             <img src='https://dummyimage.com/600x400/000/fff' alt='title or description' 
-            // data-action="http://andyyou.github.io/react-coverflow/"
-             />
-             <img src='https://dummyimage.com/600x400/000/fff' alt='title or description' 
-            // data-action="http://andyyou.github.io/react-coverflow/"
-             />
-             <img src='https://dummyimage.com/600x400/000/fff' alt='title or description' 
-            // data-action="http://andyyou.github.io/react-coverflow/"
-             />
-             <img src='https://dummyimage.com/600x400/000/fff' alt='title or description' 
-            // data-action="http://andyyou.github.io/react-coverflow/"
-             />
+            </div>))}
         </Coverflow>
     )
 }

@@ -6,6 +6,7 @@ import MyFooter from "../Components/Footer/Footer1/Footer.js";
 import ColorSelector from "../Components/ColorSelector/colorSelector";
 import MySider from "../Components/Sider/Sider3/Sider.js"
 import Slider from "../Components/Slider/Slider3/Slider.js";
+import MyCard from "../Components/Cards/Card3/Card"
 
 const { Content, } = Layout;
 
@@ -17,7 +18,11 @@ const Blogs = (props) => {
                     <Content>
                         <h2>Blog</h2>
                         <ColorSelector />
+                        <br/>
                         <Slider/>
+                        <br/>
+                        <MyCard/>
+                        <br/>
                     </Content>
                     <MyFooter />
                 </MySider>

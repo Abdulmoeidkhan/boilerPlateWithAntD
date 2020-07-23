@@ -39,4 +39,30 @@
 body{
   width:99.8% !important;
 }
+.ant-layout-sider-children{
+  position: fixed;
+}
+.ant-layout-sider-children .ant-menu-root{
+  width: 165%;
+}
+.ant-layout-sider-children .ant-menu-inline-collapsed{
+  width: 89%;
+}
 
+
+@media screen and (min-width: 1px)and (max-width: 767px){
+  .desktop-nav-class{
+    display: none;
+   }
+   .mobile-nav-class{
+     display: block
+   }
+}
+@media screen and (min-width: 768px){
+.desktop-nav-class{
+  display: block;
+ }
+ .mobile-nav-class{
+   display: none;
+ }
+}

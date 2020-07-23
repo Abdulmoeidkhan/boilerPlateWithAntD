@@ -2,11 +2,11 @@ import React from 'react';
 import { Layout } from 'antd';
 import { ThemeContext } from "../GlobalEnvironment/contextInit"
 import ColorSelector from "../Components/ColorSelector/colorSelector"
-import NavBar from "../Components/NavBar/NavBar2/NavBar"
+import NavBar2 from "../Components/NavBar/NavBar2/NavBar"
 import MyFooter from "../Components/Footer/Footer1/Footer.js"
 import MySider from "../Components/Sider/Sider1/Sider.js"
 import Slider from "../Components/Slider/Slider5/Slider.js";
-import MyCard from "../Components/Cards/Card1/Card"
+import MyCard from "../Components/Cards/Card1/Card";
 
 const { Content, } = Layout;
 
@@ -17,7 +17,7 @@ const Home = (props) => {
                 {colorsState => <>
                     {/* <MySider> */}
                     <Layout className="site-layout">
-                        <NavBar keyVal="1" />
+                        <NavBar2 keyVal="1"/>
                         <Content>
                             <h2>Home</h2>
                             <Slider/>

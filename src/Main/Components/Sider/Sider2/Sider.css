@@ -13,3 +13,10 @@
 .ant-menu-submenu-title:hover{
     color:inherit !important
 }
+
+@media screen and (min-width: 230px)and (max-width: 767px){
+
+.sider-visible-class{
+  display: none;
+}
+}

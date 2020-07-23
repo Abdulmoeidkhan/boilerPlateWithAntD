@@ -1,6 +1,23 @@
-.image-slider{
-    margin:0 auto !important;
+@media screen and (min-width: 768px) {
+    .image-slider {
+        width: 90% ;
+        margin: 0 auto !important;
+        height: 504px ;
+    }
+    .image-slider>div {
+        width: 75% ;
+        height: 504px ;
+    }
 }
-.image-slider>div{
-    width: 75% !important;
+
+@media screen and (min-width: 1px)and (max-width: 767px) {
+    .image-slider {
+        width: 90% ;
+        margin: 0 auto !important;
+        height: 304px ;
+    }
+    .image-slider>div {
+        width: 90% ;
+        height: 304px ;
+    }
 }

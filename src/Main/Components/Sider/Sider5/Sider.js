@@ -23,6 +23,7 @@ function MySider(props) {
             {colorsState =>
                 <Layout style={{ minHeight: '100vh' }} className="open-side-bar">
                     <Sider collapsible collapsed={false}
+                    className="sider-visible-class"
                         trigger={null}
                         style={{ backgroundColor: colorsState.colors.color1, color: colorsState.colors.color3 }}    
                         >
